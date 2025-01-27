@@ -18,8 +18,6 @@ on init
     insmod /lcd.ko
     insmod /sunxi-keyboard.ko
 
-    insmod /sw-device.ko
-    
     symlink /system/etc /etc
 
     mkdir /sdcard

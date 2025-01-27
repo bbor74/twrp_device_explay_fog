@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/lcd.ko:root/lcd.ko \
     $(LOCAL_PATH)/rootdir/nand.ko:root/nand.ko \
     $(LOCAL_PATH)/rootdir/sunxi-keyboard.ko:root/sunxi-keyboard.ko \
-    $(LOCAL_PATH)/rootdir/sw-device.ko:root/sw-device.ko \
     $(LOCAL_PATH)/rootdir/ueventd.sun8i.rc:root/ueventd.sun8i.rc
 
 
