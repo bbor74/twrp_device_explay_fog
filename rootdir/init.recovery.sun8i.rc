@@ -25,6 +25,7 @@ on init
     mkdir /system
     mkdir /data
     mkdir /cache
+    mkdir /private
     mount /tmp /tmp tmpfs
 
     chown root shell /tmp
