@@ -1,5 +1,7 @@
 Explay Fog/Favorite/N1 Plus/M1 Plus
 
+For INET-86DZ-REV01 board
+
 TWRP touch recovery
 -------------
 
