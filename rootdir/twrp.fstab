@@ -9,6 +9,6 @@
 /recovery		emmc		/dev/block/nandg 	flags=backup=1
 /cache 			ext4		/dev/block/nandh 	flags=backup=1;wipeingui;wipeduringfactoryreset
 /private 		vfat  		/dev/block/nandj 	flags=display="Private";backup=1
-/sdcard			vfat		/dev/block/nandk 	flags=storage
-/extsd			vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0 flags=storage;removable;fsflags=utf8
+/internal_sd	vfat		/dev/block/nandk 	flags=storage
+/external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0 flags=storage;removable;fsflags=utf8
 /usb-otg auto	/dev/block/sda1		/dev/block/sda flags=display="USB-OTG";storage;removable;fsflags=utf8
