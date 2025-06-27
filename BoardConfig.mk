@@ -62,7 +62,7 @@ TW_EXCLUDE_NANO := true
 TW_INCLUDE_CRYPTO := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_REBOOT_RECOVERY := true
-TWHAVE_SELINUX := false
+TWHAVE_SELINUX := true
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 BOARD_UMS_2ND_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/twrp.fstab
@@ -72,4 +72,11 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_LANGUAGE := ru
 TW_DEVICE_VERSION := by bbor74(kb2)
 
-
+# SELinux
+BOARD_SEPOLICY_DIRS += device/explay/fog/sepolicy
+BOARD_SEPOLICY_UNION += \
+    init.te \
+    kernel.te \
+    logd.te \
+    recovery.te \
+    rootfs.te
